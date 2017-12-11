@@ -19,5 +19,8 @@
   "homepage": "https://github.com/kangkang520/node-canvas#readme",
   "devDependencies": {
     "@types/node": "^8.0.57"
+  },
+  "dependencies": {
+    "typescript": "^2.6.2"
   }
 }
