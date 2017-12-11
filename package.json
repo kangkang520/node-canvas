@@ -1,0 +1,23 @@
+{
+  "name": "node-canvas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:png": "tsc && node test/png.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kangkang520/node-canvas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kangkang520/node-canvas/issues"
+  },
+  "homepage": "https://github.com/kangkang520/node-canvas#readme",
+  "devDependencies": {
+    "@types/node": "^8.0.57"
+  }
+}
