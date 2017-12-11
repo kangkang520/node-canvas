@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * 定义一个抽象类用于处理图片的通用属性
  */
-var Image = (function () {
+var Image = /** @class */ (function () {
     function Image() {
         //图片像素
         this._piexls = []; //为了加快速度及方便取值设置成二维数组

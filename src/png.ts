@@ -216,7 +216,8 @@ class IDAT {
 	constructor(block: DataBlock) {
 		let buffer = block.buffer
 		console.log(buffer[buffer.length - 4], buffer[buffer.length - 3], buffer[buffer.length - 2], buffer[buffer.length - 1])
-		zlib.inflateSync(block.buffer)
+		let result = zlib.inflateSync(block.buffer)
+		console.log(result + '')
 		//e2 cc f3 4c
 	}
 }

@@ -30,7 +30,7 @@ var ColorType;
 /**
  * 数据块处理类
  */
-var DataBlock = (function () {
+var DataBlock = /** @class */ (function () {
     /**
      * 构造一个数据块
      * @param buffer 文件缓冲
@@ -141,7 +141,7 @@ var DataBlock = (function () {
 /**
  * 定义png图像的IHDR
  */
-var IHDR = (function () {
+var IHDR = /** @class */ (function () {
     function IHDR(block) {
         this._width = block.int(0, 4);
         this._height = block.int(4, 4);
@@ -233,16 +233,17 @@ var IHDR = (function () {
     });
     return IHDR;
 }());
-var IDAT = (function () {
+var IDAT = /** @class */ (function () {
     function IDAT(block) {
         var buffer = block.buffer;
         console.log(buffer[buffer.length - 4], buffer[buffer.length - 3], buffer[buffer.length - 2], buffer[buffer.length - 1]);
-        zlib.inflateSync(block.buffer);
+        var result = zlib.inflateSync(block.buffer);
+        console.log(result + '');
         //e2 cc f3 4c
     }
     return IDAT;
 }());
-var Png = (function (_super) {
+var Png = /** @class */ (function (_super) {
     __extends(Png, _super);
     function Png() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
